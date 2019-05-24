@@ -4,7 +4,7 @@ describe 'Movie' do
       release_date: 1973,
       director: "George Roy Hill",
       lead: "Paul Newman",
-      in_theaters: false
+      in_theatres: false
   }}
 
   it 'inherits from ActiveRecord::Base' do
@@ -33,9 +33,9 @@ describe 'Movie' do
       expect(movie.lead).to eq("Keanu Reeves")
     end
 
-    it 'has an in theaters flag' do
-      movie.in_theaters = false
-      expect(movie.in_theaters?).to be_falsey
+    it 'has an in theatres flag' do
+      movie.in_theatres = false
+      expect(movie.in_theatres?).to be_falsey
     end
   end
 
